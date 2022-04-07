@@ -209,11 +209,45 @@ HEADER ITEMS
 .main-content{
   display: grid;
   grid-template-columns: 80% 20%;
+  height: calc(100vh - 10.26rem  );
   background-color: #e2e8f0;
+  padding: 1rem;
+  
 }
 /* PROJECTS */
 .projects{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   grid-auto-flow: row;
+  
+  height: calc(100% - 4rem);
+}
+.project-card{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 15px;
+  
+  border-left: 1rem solid #f0b429;
+  position: relative;
+}
+.project-card h3{
+  margin-top: 2rem ;
+  font-size:1.5rem;
+  cursor: pointer;
+}
+.project-card p{
+  color: grey;
+}
+.project-card .icons{
+  display: grid;
+  grid-template-columns: repeat(3, 2rem);
+  gap: 1rem;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+.project-card .icons *{
+  cursor: pointer;
 }
